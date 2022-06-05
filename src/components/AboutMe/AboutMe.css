@@ -1,0 +1,123 @@
+.aboutMe {
+  width: 100%;
+  border: 1px solid #ff3344;
+  padding: 15px;
+  margin: 1% auto;
+  background-color: #ff3344;
+}
+
+.aboutMe h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-top: 2%;
+}
+
+.aboutMeSection {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% auto;
+  gap: 6%;
+  margin-bottom: 3%;
+}
+
+.aboutMeImg {
+  width: 25%;
+}
+
+.aboutMeImg img {
+  object-fit: contain;
+  border-radius: 2px;
+  width: 90%;
+  box-shadow: 1px 2px 4px 2px #ff3344;
+}
+
+.aboutMeContent {
+  width: 100%;
+  max-width: 43%;
+  text-align: left;
+}
+
+.aboutMeContent p {
+  font-size: 16px;
+  margin-bottom: 2%;
+}
+
+.aboutMeContent button {
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 1%;
+}
+
+.aboutMeContent button:hover {
+  background-color: #fff;
+  color: #ff3344;
+  border-color: 2px solid #ff3344;
+}
+
+@media screen and (min-width: 700px) {
+  .aboutMeSectionMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .aboutMe h1 {
+    margin: auto;
+    font-size: 35px;
+  }
+
+  .aboutMe {
+    padding: 5px;
+  }
+
+  .aboutMeSection {
+    display: none;
+  }
+
+  .aboutMeSectionMobile {
+    margin-top: 2%;
+  }
+
+  .aboutMeImgMobile img {
+    object-fit: contain;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    box-shadow: 1px 2px 4px 2px #ff3344;
+  }
+
+  .aboutMeContentMobile {
+    width: 100%;
+    max-width: 90%;
+    margin: 5% auto;
+  }
+
+  .aboutMeContentMobile {
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: 5%;
+  }
+
+  .aboutMeContentMobile button {
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    margin: 2% auto;
+  }
+}

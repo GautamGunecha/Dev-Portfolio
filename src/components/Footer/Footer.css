@@ -1,0 +1,29 @@
+.footer {
+  border-top: 2px solid rgb(94, 87, 87);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footerLeft p {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.footerLeft p:hover {
+  color: #ff3344;
+  cursor: pointer;
+}
+
+.footerRight {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

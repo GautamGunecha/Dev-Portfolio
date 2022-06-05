@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header span {
+  color: #ff3344;
+}
+
+.header button {
+  width: 160px;
+  padding: 8px;
+  cursor: pointer;
+  border: 2px solid #ff3344;
+  color: #ff3344;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 2% auto;
+  transition: 0.4s;
+}
+
+.header button:hover {
+  background-color: #ff3344;
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 35px;
+  }
+  .header button {
+    margin-top: 6%;
+  }
+}

@@ -1,0 +1,113 @@
+.projects {
+  margin-top: 4%;
+}
+
+.projects h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Project */
+
+.personalProject {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  margin-top: 5%;
+  margin-left: 4.7%;
+  gap: 5%;
+}
+
+.personalProjectImg img {
+  object-fit: contain;
+  width: 85%;
+  border: 2px solid #ff3344;
+  transition: 0.4s;
+}
+
+.personalProjectImg img:hover {
+  cursor: pointer;
+}
+
+.contentHeader h2 {
+  font-size: 25px;
+  margin-bottom: 1%;
+}
+
+.contentHeader h2:hover {
+  cursor: pointer;
+  color: #ff3344;
+}
+
+.contentHeader p {
+  font-size: 15px;
+  margin-bottom: 3%;
+}
+
+.contentParagraph p {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 3%;
+  text-align: justify;
+}
+
+.techStack p {
+  color: #ff3344;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1.5%;
+}
+
+.techStackButtons {
+  display: flex;
+  gap: 1.5%;
+}
+
+.techStackButtons button {
+  padding: 7px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #ff3344;
+}
+
+@media screen and (max-width: 700px) {
+  .projectComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  .personalProject {
+    flex-wrap: wrap-reverse;
+    margin-left: 0%;
+  }
+  .contentHeader h2 {
+    font-size: 20px;
+  }
+  .contentHeader p {
+    font-size: 12px;
+  }
+  .contentParagraph p {
+    width: fit-content;
+    font-size: 14px;
+    width: 86%;
+    text-align: justify;
+  }
+  .techStackButtons {
+    display: flex;
+    gap: 1.5%;
+    margin-bottom: 5%;
+  }
+  .techStackButtons button {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

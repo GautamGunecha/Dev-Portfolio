@@ -1,0 +1,47 @@
+.contact {
+  border: 2px solid #ff3344;
+  margin-top: 5%;
+  background-color: #ff3344;
+  padding: 15px;
+}
+
+.contact h2 {
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.contactContent {
+  display: flex;
+  margin: 2% auto;
+  text-align: justify;
+  width: 50%;
+}
+
+.contact button {
+  display: flex;
+  justify-content: center;
+  margin: 2% auto;
+  padding: 8px;
+  width: 10%;
+  background-color: transparent;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.contact button:hover {
+  background-color: #fff;
+  color: #ff3344;
+}
+
+@media screen and (max-width: 700px) {
+  .contact button {
+    width: 35%;
+  }
+}
