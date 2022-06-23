@@ -16,10 +16,14 @@
   max-width: 1500px;
   display: flex;
   align-items: center;
-  text-align: justify;
+  text-align: left;
   margin-top: 5%;
   margin-left: 4.7%;
   gap: 5%;
+}
+
+.personalProjectContent {
+  width: 95%;
 }
 
 .personalProjectImg img {
@@ -31,6 +35,7 @@
 
 .personalProjectImg img:hover {
   cursor: pointer;
+  border: 2px solid #33ff6d;
 }
 
 .contentHeader h2 {
@@ -49,7 +54,8 @@
 }
 
 .contentParagraph p {
-  font-size: 17px;
+  width: 80%;
+  font-size: 15px;
   font-weight: 400;
   margin-bottom: 3%;
   text-align: justify;
@@ -75,6 +81,7 @@
   color: #fff;
   background-color: transparent;
   border: 2px solid #ff3344;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -84,27 +91,32 @@
     justify-content: center;
     margin-left: 10%;
   }
+
   .personalProject {
     flex-wrap: wrap-reverse;
     margin-left: 0%;
   }
+
   .contentHeader h2 {
     font-size: 20px;
   }
+
   .contentHeader p {
     font-size: 12px;
   }
+
   .contentParagraph p {
     width: fit-content;
     font-size: 14px;
     width: 86%;
     text-align: justify;
   }
+
   .techStackButtons {
     display: flex;
-    gap: 1.5%;
-    margin-bottom: 5%;
+    flex-wrap: wrap-reverse;
   }
+
   .techStackButtons button {
     cursor: pointer;
     font-size: 15px;

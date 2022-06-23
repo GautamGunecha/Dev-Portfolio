@@ -1,37 +1,37 @@
 import React from "react";
 import "../Projects.css";
-import Portfolio from "../../assets/Portfolio.png";
 
-const Project = () => {
+const Project = ({ title, text, description, tech1, tech2, tech3, tech4, tech5, image, link }) =>
+{
   return (
     <div className="personalProject">
       <div className="personalProjectContent">
         <span className="contentHeader">
-          <h2>1. Developer Portfolio</h2>
-          <p>Personal Portfolio</p>
+          <h2>{title}</h2>
+          <p>{text}</p>
         </span>
         <span className="contentParagraph">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
-            voluptas eaque placeat voluptatibus consectetur sit qui sunt
-            repellat recusandae explicabo, consequatur, iure ducimus. Id nam
-            error, sequi pariatur nostrum non?
+            {description}
           </p>
         </span>
         <span className="techStack">
           <p>Technologies</p>
           <span className="techStackButtons">
-            <button>MongoDB</button>
-            <button>NodeJs</button>
-            <button>ExpressJs</button>
-            <button>React</button>
+            {tech1 && <button>{tech1}</button>}
+            {tech2 && <button>{tech2}</button>}
+            {tech3 && <button>{tech3}</button>}
+            {tech4 && <button>{tech4}</button>}
+            {tech5 && <button>{tech5}</button>}
           </span>
         </span>
       </div>
       <div className="personalProjectImg">
-        <img src={Portfolio} alt="" />
+        <a href={link}>
+          {image && <img src={image} alt="" />}
+        </a>
       </div>
-    </div>
+    </div >
   );
 };
 
